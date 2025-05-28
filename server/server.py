@@ -67,36 +67,6 @@ def init_databases():
         save_json(RNG_DB, rng_data)
 init_databases()
 
-# Generate new usb device
-def init_usb_device():
-    if not os.path.exists("../usb_device"):
-        os.makedirs("../usb_device")
-    # Empty the usb device directory
-    for file in os.listdir("../usb_device"):
-        file_path = os.path.join("../usb_device", file)
-        if os.path.isfile(file_path):
-            os.remove(file_path)
-    # Simulate writing to USB
-    rng_data = load_json(RNG_DB)
-    rng_token = list(rng_data.keys())[0]
-    # rng token
-    with open("../usb_device/rng_token.txt", "w") as f:
-        f.write(rng_token)
-    print("Generated RNG token and saved to simulated USB device.")
-    with open("rsa_keys/server_public.pem", "rb") as f:
-        public_key = f.read()
-    # public key
-    with open("../usb_device/server_public.pem", "wb") as f:
-        f.write(public_key)
-    # Copy KEY_GEN_PATH to usb_device
-    if os.path.exists(KEY_GEN_PATH):
-        with open(KEY_GEN_PATH, "r") as f:
-            key_gen_script = f.read()
-        with open("../usb_device/genera_chiavi.py", "w") as f:
-            f.write(key_gen_script)
-        print("Key generation script copied to simulated USB device.")
-init_usb_device()
-
 users = load_json(USER_DB)
 rng_data = load_json(RNG_DB)
 
@@ -143,6 +113,9 @@ def register():
         ).decode()
     except Exception as e:
         return jsonify({"status": "error", "message": "Decryption failed"}), 400
+    
+    rng_data = load_json(RNG_DB)
+    
     # Check if RNG token is valid
     if rng_token not in rng_data or rng_data[rng_token] != "available":
         return jsonify({"status": "error", "message": "Invalid or expired token"}), 400
@@ -165,6 +138,7 @@ def register():
     save_json(USER_DB, users)
     save_json(RNG_DB, rng_data)
     init_databases()  # Ensure databases are initialized after registration
+
     print(f"User {username} registered successfully with RNG token {rng_token} and public key {public_key_pem.decode()}.")
     return jsonify({"status": "success", "message": f"User {username} registered successfully."})
 
@@ -246,7 +220,6 @@ def init_server():
     """ Initialize the server by loading databases and generating keys. """
     init_rsa()  # Ensure RSA keys are initialized
     init_databases()  # Ensure databases are initialized
-    init_usb_device()  # Initialize USB device with RNG token and public key
 init_server()
 
 #main function

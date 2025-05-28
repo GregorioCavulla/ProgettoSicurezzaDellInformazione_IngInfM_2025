@@ -1,0 +1,19 @@
+{
+  "ghigo": {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo/mf3ia/Gy+IkdqBiFBU\nluCNap4CNre++1YaTzbRm2Tl2kCeqqe9hBJ+LEqpKKc+MRCiTZiSNgL7hu/3jiFu\n1+4X05Jedx1DqROtVVCesrjZ/OPAvELRrKnmE4MKMFakIreLiIFoC//T+B52oamr\nXAk2p5qNxbGqVzy3XWAn2T3C7RNaOq0Yh0ilCDS/AMl22/tKxM5d0PfWAu4WZl4d\nPN2VQilwt447zDIqDyu5CKqCej+UzI++n5L/xZtgFffCk6Lf9DQWSlehTiH0pDgs\n3RsvmmcvQFJhCvPtQpJ9ZW+Nc6ZNMF8bCSExPV61xASUpgz5qGjcXQqNESEDjPF6\nwwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "rng_token": "1befb93d68cf36fc791d9c8459e31f30",
+    "challenge": "RqV8+7Oqv0iFF7iyBDcXbU0J2hHnHbt99W5yFLW9Uvc="
+  },
+  "coco": {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo/mf3ia/Gy+IkdqBiFBU\nluCNap4CNre++1YaTzbRm2Tl2kCeqqe9hBJ+LEqpKKc+MRCiTZiSNgL7hu/3jiFu\n1+4X05Jedx1DqROtVVCesrjZ/OPAvELRrKnmE4MKMFakIreLiIFoC//T+B52oamr\nXAk2p5qNxbGqVzy3XWAn2T3C7RNaOq0Yh0ilCDS/AMl22/tKxM5d0PfWAu4WZl4d\nPN2VQilwt447zDIqDyu5CKqCej+UzI++n5L/xZtgFffCk6Lf9DQWSlehTiH0pDgs\n3RsvmmcvQFJhCvPtQpJ9ZW+Nc6ZNMF8bCSExPV61xASUpgz5qGjcXQqNESEDjPF6\nwwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "rng_token": "308d8595b8446d769b14898548485fd3"
+  },
+  "dave": {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo/mf3ia/Gy+IkdqBiFBU\nluCNap4CNre++1YaTzbRm2Tl2kCeqqe9hBJ+LEqpKKc+MRCiTZiSNgL7hu/3jiFu\n1+4X05Jedx1DqROtVVCesrjZ/OPAvELRrKnmE4MKMFakIreLiIFoC//T+B52oamr\nXAk2p5qNxbGqVzy3XWAn2T3C7RNaOq0Yh0ilCDS/AMl22/tKxM5d0PfWAu4WZl4d\nPN2VQilwt447zDIqDyu5CKqCej+UzI++n5L/xZtgFffCk6Lf9DQWSlehTiH0pDgs\n3RsvmmcvQFJhCvPtQpJ9ZW+Nc6ZNMF8bCSExPV61xASUpgz5qGjcXQqNESEDjPF6\nwwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "rng_token": "307ed2e8a7f2c5680ca370d685796b53"
+  },
+  "magoo": {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo/mf3ia/Gy+IkdqBiFBU\nluCNap4CNre++1YaTzbRm2Tl2kCeqqe9hBJ+LEqpKKc+MRCiTZiSNgL7hu/3jiFu\n1+4X05Jedx1DqROtVVCesrjZ/OPAvELRrKnmE4MKMFakIreLiIFoC//T+B52oamr\nXAk2p5qNxbGqVzy3XWAn2T3C7RNaOq0Yh0ilCDS/AMl22/tKxM5d0PfWAu4WZl4d\nPN2VQilwt447zDIqDyu5CKqCej+UzI++n5L/xZtgFffCk6Lf9DQWSlehTiH0pDgs\n3RsvmmcvQFJhCvPtQpJ9ZW+Nc6ZNMF8bCSExPV61xASUpgz5qGjcXQqNESEDjPF6\nwwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "rng_token": "aeacbaed7c085b1d56db703ec9a003ba"
+  }
+}
