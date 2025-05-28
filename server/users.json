@@ -15,5 +15,10 @@
   "magoo": {
     "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo/mf3ia/Gy+IkdqBiFBU\nluCNap4CNre++1YaTzbRm2Tl2kCeqqe9hBJ+LEqpKKc+MRCiTZiSNgL7hu/3jiFu\n1+4X05Jedx1DqROtVVCesrjZ/OPAvELRrKnmE4MKMFakIreLiIFoC//T+B52oamr\nXAk2p5qNxbGqVzy3XWAn2T3C7RNaOq0Yh0ilCDS/AMl22/tKxM5d0PfWAu4WZl4d\nPN2VQilwt447zDIqDyu5CKqCej+UzI++n5L/xZtgFffCk6Lf9DQWSlehTiH0pDgs\n3RsvmmcvQFJhCvPtQpJ9ZW+Nc6ZNMF8bCSExPV61xASUpgz5qGjcXQqNESEDjPF6\nwwIDAQAB\n-----END PUBLIC KEY-----\n",
     "rng_token": "aeacbaed7c085b1d56db703ec9a003ba"
+  },
+  "mago": {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp1TjWZ2XNe1tp760CH9U\nQn2IWe0kMMZar58RHLieAa7X9QbueUFHB0T0FafSZyMCWxrnUQDNLXUJMo/yvgtx\n3NEIU8xTIOBvrd3K10Bmf1BpGvGuE6JTFOiTNwA5jgeUp472CUqUgk+MzzFd8/Hm\niikTbx6cYf/CfRRxZUy4G6ygwKvCZYFhc76BN+b2HuftP6I5oGzSlPIK59Xfl/vH\nDjxPBaSjsbM5rLYMN6NOHT4dSxkuBva7XZJOFwLerUm6XSQKnU1/IFcEh7LX46XG\ntouQEXUqrLqpG9d79O12mYirwy/hMbXdlDXBZjAA4favqfUmpyjpX/whoEr4oyTw\nUwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "rng_token": "2e1bfaa3c43ff0b3584151749aaaede2",
+    "challenge": "g3aoFJITWmZojkuWpevqnn8da7WcdMAO1s9YFI49DQA="
   }
 }
