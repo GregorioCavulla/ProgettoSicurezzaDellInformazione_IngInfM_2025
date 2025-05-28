@@ -7,5 +7,10 @@
     "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtOMeHFEPGb5UjdurI1JQ\nzhSwOGqmMO8kICosUu0C73ZoG+nNfZKy3tKShmTVZ9Xi7FRPEGSp0S0hfGoNIkHr\nd2Rq2uNKc5S92K9/ek3HlaG2/+8b6gwzdPt4dgCx9u3GckmokIOXQq/PsgQOYjyn\n9mfuOvMSPntrI7tHqe4cJt+XjYRtVjoDYq3fY2G7uj7+uCCY8ErQ/N5T4QSj4zVa\nTvEKfYXeY97w6J2viMbJmIzSH+fbckpFpguvGjQeJQ+A4QSTx4aE4IgYyvLnWUsA\nEUqf0GCxhB0+onG16pJqW+PRrv1rATtu+D+thG3zB3294SI+zksbvRaIrzLV7+KI\ntwIDAQAB\n-----END PUBLIC KEY-----\n",
     "rng_token": "34c50083bb98ecbcdb91e55678ba7651",
     "challenge": "BYLXgFt2Paigl4+DP/9thkbsc0XtEo6vWxxDxgAxPgk="
+  },
+  "coco": {
+    "public_key": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0s4fCA5EDu+qHMJBrIN9\neJEXcpgKtrmCtyl3J25VtDESDMYxRPwK20xSxQiYKlZwQRHQQQX3lOGBmRf5BQ2w\noh2vGy0IdAiG9eZ+IevHuNfIFNfDTQJK4hHPkgxRzA9yUiSjFqjMAKZtymky159d\nUSW0qmrnem5gkyDCMC4bgDyVxxDspIzkCsBzLeQ69KTl+5XzbxQMuOoO5MnEiOm4\ngZ0EbVVBOmoSM61Z6wOUrLoLpOzlHcqJ/r3Rz0Ox7IjK8gAiX4tUZq/hioLKGBA2\nMg0/DsataknOTOO1L6m9EHuiOy1yKR2Bv7lZdduvqXHbns3nfIYTnit1mp5zqGKK\nuwIDAQAB\n-----END PUBLIC KEY-----\n",
+    "rng_token": "0badab011a47ff9c8142a41c87849df4",
+    "challenge": "Zu2Xa2AddXxgr33ZiiV3YDP3cEBxes/haSRd6Q57ZPk="
   }
 }

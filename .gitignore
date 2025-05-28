@@ -1,0 +1,39 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+
+# Virtual environment
+venv/
+.env/
+
+# Editor-specific files
+.idea/                  # IntelliJ IDEA
+*.sublime-project       # Sublime Text
+*.sublime-workspace
+.vscode/                # VS Code
+
+# Operating System files
+.DS_Store               # macOS
+Thumbs.db               # Windows
+
+# Logs and databases
+*.log
+*.sqlite3
+db.sqlite3
+
+# Distribution and packaging
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Miscellaneous
+.pytest_cache/          # pytest cache
+.coverage               # coverage.py
+htmlcov/                # coverage.py HTML report
+
+# Security
+*.pem                  # PEM files
+*.key                  # Key files
