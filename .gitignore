@@ -37,3 +37,20 @@ htmlcov/                # coverage.py HTML report
 # Security
 *.pem                  # PEM files
 *.key                  # Key files
+
+# My Paths
+./client/rsa_keys/
+./client/server_public.pem
+./client/server_private.pem
+./client/client_public.pem
+./client/client_private.pem
+./server/rsa_keys/
+./server/server_public.pem
+./server/server_private.pem
+./server/client_public.pem
+./server/client_private.pem
+./usb_device/rsa_keys/
+./usb_device/server_public.pem
+./usb_device/server_private.pem
+./usb_device/client_public.pem
+./usb_device/client_private.pem
