@@ -88,6 +88,13 @@ def init_usb_device():
     # public key
     with open("../usb_device/server_public.pem", "wb") as f:
         f.write(public_key)
+    # Copy KEY_GEN_PATH to usb_device
+    if os.path.exists(KEY_GEN_PATH):
+        with open(KEY_GEN_PATH, "r") as f:
+            key_gen_script = f.read()
+        with open("../usb_device/genera_chiavi.py", "w") as f:
+            f.write(key_gen_script)
+        print("Key generation script copied to simulated USB device.")
 init_usb_device()
 
 users = load_json(USER_DB)
