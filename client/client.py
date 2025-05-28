@@ -10,12 +10,13 @@ import os
 username = ""
 SERVER = "http://localhost:5000"
 DEVICE_PATH = "../usb_device"
+RSA_PATH = "rsa_keys"
 
 # Generate client RSA key pair if not present in /rsa_keys
 def init_rsa():
-    if not os.path.exists("rsa_keys"):
-        os.makedirs("rsa_keys")
-    if not os.path.exists("rsa_keys/client_private.pem"):
+    if not os.path.exists(RSA_PATH):
+        os.makedirs(RSA_PATH)
+    if not os.path.exists(f"{RSA_PATH}/client_private.pem"):
         from cryptography.hazmat.primitives.asymmetric import rsa
         client_private_key = rsa.generate_private_key(
             public_exponent=65537,
@@ -25,7 +26,7 @@ def init_rsa():
         client_public_key = client_private_key.public_key()
         
         # Save server private key
-        with open("rsa_keys/client_private.pem", "wb") as f:
+        with open(f"{RSA_PATH}/client_private.pem", "wb") as f:
             f.write(client_private_key.private_bytes(
                 encoding=serialization.Encoding.PEM,
                 format=serialization.PrivateFormat.TraditionalOpenSSL,
@@ -33,7 +34,7 @@ def init_rsa():
             ))
         
         # Save server public key
-        with open("rsa_keys/client_public.pem", "wb") as f:
+        with open(f"{RSA_PATH}/client_public.pem", "wb") as f:
             f.write(client_public_key.public_bytes(
                 encoding=serialization.Encoding.PEM,
                 format=serialization.PublicFormat.SubjectPublicKeyInfo
@@ -43,12 +44,14 @@ def init_rsa():
 
 # Load usb_device data
 def load_usb():
-    # Loading rng token from usb_device
+    # Loading rng token from usb_device and saving it to rng_token.txt
     if not os.path.exists(os.path.join(DEVICE_PATH, "rng_token.txt")):
         raise FileNotFoundError("RNG token file not found in usb_device.")
     with open(os.path.join(DEVICE_PATH, "rng_token.txt"), "r") as f:
         rng_token = f.read().strip()
-    # Loading server public key from usb_device
+    with open("rng_token.txt", "w") as f:
+        f.write(rng_token)
+    # Loading server public key from usb_device and saving it to server_public.pem
     if not os.path.exists(os.path.join(DEVICE_PATH, "server_public.pem")):
         raise FileNotFoundError("Server public key file not found in usb_device.")
     with open(os.path.join(DEVICE_PATH, "server_public.pem"), "rb") as f:
@@ -56,9 +59,6 @@ def load_usb():
             f.read(),
             backend=default_backend()
         )
-    # Save loaded data to files
-    with open("rng_token.txt", "w") as f:
-        f.write(rng_token)
     with open("server_public.pem", "wb") as f:
         f.write(server_public_key.public_bytes(
             encoding=serialization.Encoding.PEM,

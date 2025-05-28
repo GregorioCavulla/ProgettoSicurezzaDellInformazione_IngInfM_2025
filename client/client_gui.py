@@ -1,3 +1,5 @@
+#AIO gui client
+
 import tkinter as tk
 from tkinter import messagebox
 import requests
@@ -35,18 +37,24 @@ def init_rsa():
             ))
 
 def load_usb():
+    # Loading rng token from usb_device and saving it to rng_token.txt
     if not os.path.exists(os.path.join(DEVICE_PATH, "rng_token.txt")):
         raise FileNotFoundError("rng_token.txt non trovato.")
-    if not os.path.exists(os.path.join(DEVICE_PATH, "server_public.pem")):
-        raise FileNotFoundError("server_public.pem non trovato.")
     with open(os.path.join(DEVICE_PATH, "rng_token.txt"), "r") as f:
         rng_token = f.read().strip()
     with open("rng_token.txt", "w") as f:
         f.write(rng_token)
+        
+    # Loading server public key from usb_device and saving it to server_public.pem
+    if not os.path.exists(os.path.join(DEVICE_PATH, "server_public.pem")):
+        raise FileNotFoundError("server_public.pem non trovato.")
     with open(os.path.join(DEVICE_PATH, "server_public.pem"), "rb") as f:
-        server_pub = f.read()
-        with open("server_public.pem", "wb") as s:
-            s.write(server_pub)
+        server_public_key = f.read()
+    with open("server_public.pem", "wb") as f:
+        f.write(server_public_key.public_bytes(
+            encoding=serialization.Encoding.PEM,
+            format=serialization.PublicFormat.SubjectPublicKeyInfo
+        ))
 
 def register(username):
     try:
