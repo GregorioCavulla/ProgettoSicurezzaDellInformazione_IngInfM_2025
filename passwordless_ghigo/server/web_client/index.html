@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passwordless Client</title>
+</head>
+<body>
+    <h1>Registrazione e Login Passwordless</h1>
+
+    <h2>Registrazione</h2>
+    <input type="text" id="username" placeholder="Username"><br><br>
+    <label>Token RNG:</label>
+    <input type="file" id="rngFile"><br>
+    <label>Chiave Pubblica:</label>
+    <input type="file" id="pubKeyFile"><br>
+    <label>Firma:</label>
+    <input type="file" id="signatureFile"><br>
+    <button onclick="register()">Registrati</button>
+
+    <h2>Login</h2>
+    <input type="text" id="loginUsername" placeholder="Username per login"><br>
+    <label>Challenge Firmata:</label>
+    <input type="file" id="signedChallenge"><br>
+    <button onclick="login()">Login</button>
+
+    <p id="output"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/node-forge@1.3.1/dist/forge.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+</html>
