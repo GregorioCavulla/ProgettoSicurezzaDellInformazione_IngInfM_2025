@@ -1,5 +1,5 @@
 
-# Progetto Sicurezza Informatica – Ing. Informatica M (2025)
+# Progetto Sicurezza Informatica – Ing. Informatica M (2025) / Passwordless Authentication System
 
 Questo progetto è stato sviluppato come parte del corso di **Sicurezza Informatica** presso il corso di laurea in Ingegneria Informatica M anno accademico 2024/2025.
 ## Obiettivo
