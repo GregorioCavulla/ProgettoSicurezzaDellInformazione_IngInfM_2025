@@ -27,7 +27,14 @@ Progetto/\
 ## Requisiti
 
 - Python 3.8+
-- Librerie 
+- Librerie necessarie:
+  - `cryptography` 
+  - `flask`
+  - `json`
+  - `base64`
+  - `os`
+  - `secrets`
+  - `requests`
 
 ## Istruzioni per l'uso
 
@@ -76,7 +83,7 @@ Ogni volta che si vuole permettere a un client di registrarsi, il server deve ge
 
 * I file `.json` e `.txt` sono fondamentali per la gestione dei token e delle credenziali.
 * Il supporto USB è simulato via filesystem, ma può essere adattato per dispositivi reali.
-* Il sistema potrebbe essere esteso per includere crittografia o hash delle password/token.
+* 
 
 
 
