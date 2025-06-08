@@ -81,7 +81,7 @@ Ogni volta che si vuole permettere a un client di registrarsi, il server deve ge
 
 ## Note
 
-* I file `.json` e `.txt` sono fondamentali per la gestione dei token e delle credenziali.
+* I file `.json` e `.txt` simulano quello che potrebbe essere un DB.
 * Il supporto USB è simulato via filesystem, ma può essere adattato per dispositivi reali.
 
 
